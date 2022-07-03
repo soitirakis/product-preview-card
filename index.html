@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Product preview card component</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="author" content="padawan">
+  <meta name="description" content="A nice component card for a product preview with image
+  and price">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <picture class="image">
+      <source media="(min-width: 900px)" srcset="img/image-product-desktop.jpg">
+      <img src="img/image-product-mobile.jpg">
+    </picture>
+    <article class="product">
+      <h1 class="product-title">perfume</h1>
+      <h2 class="card-title">Gabrielle Essence Eau de Parfum</h2>
+      <p class="card-description">A floral, solar and voluptous interpreation
+      composed by Oliver Poige, Perfumer-Creator for the House of CHANEL.</p>
+      <p class="card-price">&#36;149.99 <span class="card-old-price"><del>&#36;169.99</del></span></p>
+      <button type="button" class="card-button" name="button"><input type="image"
+        src="img/icon-cart.svg">
+        Add to Cart</button>
+    </article>
+  </main>
+</body>
+</html>

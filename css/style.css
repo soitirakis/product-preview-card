@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root {
+  --background: hsl(30, 38%, 92%);
+  --container-background: hsl(0, 0%, 100%);
+  --main-color: hsl(228, 12%, 48%);
+  --title-color: hsl(212, 21%, 14%);
+  --button-color: hsla(158, 36%, 37%, .7);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+.container {
+  margin: auto;
+  width: 375px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background: var(--container-background);
+  font-family: Montserrat;
+  letter-spacing: 1.5px;
+  color: var(--main-color);
+  overflow: hidden;
+}
+.product {
+  padding: 1.75rem;
+}
+.product-title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.card-title, .card-price {
+  font-family: Fraunces;
+}
+.card-title {
+  color: var(--title-color);
+}
+.card-price {
+  color: var(--button-color);
+  font-size: 1.5rem;
+  padding: 0.6rem 0;
+}
+.card-old-price {
+  color: var(--main-color);
+  font-size: 0.7rem;
+  vertical-align: middle;
+  padding-left: 1.75rem;
+}
+.image img{
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  object-fit: contain;
+}
+.card-button {
+  color: var(--container-background);
+  background: var(--button-color);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.card-button:hover {
+  cursor: pointer;
+  background: hsla(158, 36%, 37%, 1);
+}
+input[type=image] {
+  padding-right: 0.2rem;
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 900px;
+  }
+  .image img {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+  .product {
+    width: 600px;
+    padding: 4.7rem;
+  }
+  .card-title, .card-description, .card-price {
+    padding-bottom: 2rem;
+  }
+}
