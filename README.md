@@ -10,7 +10,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ### Links
 
 - [GitHub Pages] 
-- [GitHub Code]
+- [GitHub Code] https://github.com/soitirakis/product-preview-card
 
 
 ### Continued development
